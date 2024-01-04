@@ -20,12 +20,11 @@ main > section {
     height: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 15px;
     overflow: hidden;
     transition: width 1s, height 1s;
     transition-timing-function: ease;
-    
+    transform: translate(-50%, -50%);
 }
 div#formulario {
     transition: width 1s, height 1s;
