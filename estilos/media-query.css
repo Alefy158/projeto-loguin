@@ -2,7 +2,10 @@
 
 @media screen and (min-width: 780px) and (max-width: 992px) {
     body {
-        background-image: linear-gradient(to bottom, rgb(22, 22, 56), rgb(21, 71, 21));
+        background-image: linear-gradient(to bottom, rgb(22, 22, 56), rgb(21, 71, 68));
+    }
+    p {
+        font-size: 1.2em;
     }
     main > section {
         width: 80%;
@@ -19,18 +22,45 @@
 }
 @media screen and (min-width: 992px) {
     body {
-        background-image: linear-gradient(to bottom, rgb(22, 22, 56), rgb(21, 71, 21));
+        background-image: linear-gradient(to bottom, rgb(22, 22, 56), rgb(21, 71, 68));
     }
     main > section {
         width: 80%;
     }
-    div#imagem {
-        float: left;
-        width: 50%;
-        height: 100%;
+    p {
+        font-size: 1.5em;
     }
+    div#imagem {
+        
+        float: left;
+        width: 30%;
+        height: 100%;
+        animation: animacao 2s ease-in-out forwards;
+    }
+    @keyframes animacao {
+        0% {
+            transform: translateX(0);
+            width: 30%;
+        }
+        100% {
+            transform: translateX(100%);
+            width: 50%;
+        }
+    }
+
     div#formulario {
         float: right;
-        width: 50%;
+        width: 70%;
+        animation: animacaoo 2s ease-in-out forwards;
+    }
+    @keyframes animacaoo {
+        0% {
+            transform: translateX(0);
+            width: 70%;
+        }
+        100% {
+            transform: translateX(-100%);
+            width: 50%;
+        }
     }
 }
