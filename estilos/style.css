@@ -57,7 +57,7 @@ p {
     font-size: 1em;
     width: calc(100% - 45px);
     border-radius: 8px;
-    height: 95%;
+    height: 38px;
     transform: translateY(-12px);
 }
 label {
